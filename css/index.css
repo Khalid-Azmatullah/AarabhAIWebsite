@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.textbox {
+  margin-bottom: 20px;
+}
+
+.textbox input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.textbox input:focus {
+  border-color: #0066cc;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #0066cc;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #004fa3;
+}
+
+#incorrectPasswordMessage {
+  color: red;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+@keyframes vibrate{
+  
+  15% {
+    transform: translateX(6px);
+  }
+  20% {
+      transform: translateX(-6px);
+  }
+  25% {
+    transform: translateX(6px);
+  }
+  30% {
+      transform: translateX(-6px);
+  }
+  35% {
+    transform: translateX(6px);
+  }
+  40% {
+      transform: translateX(-6px);
+  }
+}
+
+.incorrectAnimation {
+  animation: vibrate 1000ms;
+}
